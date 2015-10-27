@@ -1,12 +1,12 @@
 class Racionales
 	attr_reader :numerador, :denominador
 
-	def inicializate(x, y)
+	def initialize(x, y)
 		@numerador, @denominador = x, y
 	end
 
 	def to_s
-		"#{numerador}/#{denominador}"
+		"#{@numerador}/#{@denominador}"
 	end
 	def mostrar
 		puts "@numerador / @denominador"
