@@ -8,7 +8,4 @@ class Racionales
 	def to_s
 		"#{@numerador}/#{@denominador}"
 	end
-	def mostrar
-		puts "@numerador / @denominador"
-	end
 end
