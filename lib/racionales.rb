@@ -13,7 +13,7 @@ class Racionales
 		aux = mcm(@denominador, object.denominador)
 		resultado = Racionales.new(((aux / @denominador) * @numerador)+((aux / object.denominador) * object.numerador),aux )
 	end
-	def resta
+	def resta(object)
 		aux = mcm(@denominador, object.denominador)
 		resultado = Racionales.new(((aux / @denominador) * @numerador)-((aux / object.denominador) * object.numerador),aux )
 	end
@@ -34,7 +34,7 @@ class Racionales
 	def mcd(a,b)
 		#u, v = u.abs, v.abs
 		while b != 0
-			a, b = a, a%b
+			a, b = b, a%b
 		end
 		a
 	end
